@@ -1,0 +1,25 @@
+body {
+    background: hsl(273, 23%, 8%);
+}
+
+.jumbotron {
+    background: linear-gradient(#7c4dc5, #9a5aca);
+}
+
+h1 a {
+    color: white;
+    text-decoration: none;
+}
+h1 a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+input[type='submit'] {
+    background-color: hsla(273, 62%, 40%, 1);
+    color: white;
+}
+
+input[type='submit']:hover {
+    background-color: hsla(273, 62%, 30%, 1);
+}

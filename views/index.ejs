@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brand app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron text-light text-center mt-5">
+            <h1 class="display-3">
+                <a href="/">Brand App</a>
+            </h1>
+            <p class="lead">Generate the perfect name for your business, complete with a custom logo.</p>
+            <form action="/submit" method="POST" class="text-left mt-5 width-auto form-inline justify-content-center">
+                <div class="form-inline">
+                    <input class="form-control" type="text" name="query" placeholder="Enter key words" />
+                    <input type="submit" class="btn btn-indigo btn-large mx-2" />
+                </div>
+            </form>
+            <small class="form-text form-block text-white-50 text-center">Works best with one or two words, like 'finance' or 'easy workouts'.</small>
+        </div>
+        <% if (typeof names!='undefined') { %>
+            <div class="card p-3">
+                <% names.forEach(function(name) { %>
+                    <p><%= name %></p>
+                <% }); %>
+            </div>
+        <% } %>
+    </div>
+</body>
+
+</html>
