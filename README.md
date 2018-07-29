@@ -13,8 +13,10 @@ The user will input a couple words (maybe just one word?) and we will generate n
 
  * Find related words (music -> tunes, songs, rhythm)
  * Add suffixes and prefixes to words (musicify, instamusic).
+   * unmusic
  * Merge words (musitunes, singsongs)
  * Find popular sayings and create puns.
+ * Remove vowels
 
 ### Logo Generation
 Based on the list of names, generate a logo for each name. Options:
